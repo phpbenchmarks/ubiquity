@@ -1,0 +1,1 @@
+{"require":{"php": "^7.1.3","twig\/twig":"~1.0","mindplay\/annotations":"dev-master","phpmv\/ubiquity":"2.0.x-dev"},"autoload":{"psr-4":{"":"app\/"}}}
