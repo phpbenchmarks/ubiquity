@@ -5,15 +5,15 @@ function clearCacheAndLogs() {
     [ "$?" != "0" ] && exit 1
     sudo /bin/chmod -R 777 app/cache
     [ "$?" != "0" ] && exit 1
+
+    ./vendor/bin/Ubiquity init-cache
 }
 
 function init() {
-    sudo /bin/rm -rf vendor/
-#    clearCacheAndLogs
+    clearCacheAndLogs
 
     composer install --no-dev --classmap-authoritative
     [ "$?" != "0" ] && exit 1
 
-#    clearCacheAndLogs
     return 0
 }

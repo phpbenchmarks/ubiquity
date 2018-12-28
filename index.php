@@ -11,3 +11,5 @@ require_once ROOT.'./../vendor/autoload.php';
 
 require_once ROOT.'config/services.php';
 Startup::run($config,$_GET["c"]);
+
+// require phpbenchmarks stats.php here when needed

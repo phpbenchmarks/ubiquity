@@ -1,10 +1,10 @@
 {
     "require": {
         "php": "^7.1.3",
-        "twig/twig": "~1.0",
         "mindplay/annotations": "^1.3",
         "phpmv/ubiquity": "^2.0",
-        "phpbenchmarks/ubiquity-common": "dev-ubiquity_2_hello-world"
+        "phpmv/ubiquity-devtools": "^1.1",
+        "phpbenchmarks/ubiquity-common": "2.1.0"
     },
     "autoload": {
         "psr-4": {
