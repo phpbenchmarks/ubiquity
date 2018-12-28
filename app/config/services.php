@@ -3,4 +3,5 @@ use Ubiquity\cache\CacheManager;
 use Ubiquity\controllers\Router;
 
 CacheManager::startProd($config);
-Router::start();
+EventsManager::start();
+Router::startRest();
