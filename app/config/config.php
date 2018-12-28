@@ -1,16 +1,6 @@
 <?php
 return array(
 		"siteUrl"=>"/",
-		"database"=>[
-				"type"=>"mysql",
-				"dbName"=>"",
-				"serverName"=>"127.0.0.1",
-				"port"=>"3306",
-				"user"=>"root",
-				"password"=>"",
-				"options"=>[],
-				"cache"=>false
-		],
 		"sessionName"=>"ubiquity-phpbenchmarks",
 		"namespaces"=>[],
 		"templateEngine"=>'Ubiquity\\views\\engine\\Twig',

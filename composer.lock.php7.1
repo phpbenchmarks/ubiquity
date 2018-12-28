@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f53fcecb2ccf9acf274736e33e935a4f",
+    "content-hash": "f1a24c7e2fa289800c7d89cd6afa23aa",
     "packages": [
         {
             "name": "mindplay/annotations",
-            "version": "dev-master",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-annotations/php-annotations.git",
-                "reference": "85d060e0397a64000ad37cd3842f07c50ca78405"
+                "reference": "a5830fb63f822cb72c4bf6172955fd05986557c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-annotations/php-annotations/zipball/85d060e0397a64000ad37cd3842f07c50ca78405",
-                "reference": "85d060e0397a64000ad37cd3842f07c50ca78405",
+                "url": "https://api.github.com/repos/php-annotations/php-annotations/zipball/a5830fb63f822cb72c4bf6172955fd05986557c6",
+                "reference": "a5830fb63f822cb72c4bf6172955fd05986557c6",
                 "shasum": ""
             },
             "require": {
@@ -30,7 +30,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3.x-dev"
+                    "dev-master": "1.2.x-dev"
                 }
             },
             "autoload": {
@@ -54,20 +54,46 @@
                 "annotations",
                 "framework"
             ],
-            "time": "2017-06-19T20:19:49+00:00"
+            "time": "2016-02-14T20:09:40+00:00"
         },
         {
-            "name": "phpmv/ubiquity",
-            "version": "dev-master",
+            "name": "phpbenchmarks/ubiquity-common",
+            "version": "dev-ubiquity_2_hello-world",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpMv/ubiquity.git",
-                "reference": "8a65c2c4598cb664cacc32d9d3340d1cd632e3ab"
+                "url": "https://github.com/phpbenchmarks/ubiquity-common.git",
+                "reference": "c86cde9312f5fc6b840eb068dd0ce7785abd109f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/ubiquity/zipball/8a65c2c4598cb664cacc32d9d3340d1cd632e3ab",
-                "reference": "8a65c2c4598cb664cacc32d9d3340d1cd632e3ab",
+                "url": "https://api.github.com/repos/phpbenchmarks/ubiquity-common/zipball/c86cde9312f5fc6b840eb068dd0ce7785abd109f",
+                "reference": "c86cde9312f5fc6b840eb068dd0ce7785abd109f",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "PhpBenchmarksUbiquity\\HelloWorld\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "time": "2018-12-28T14:39:12+00:00"
+        },
+        {
+            "name": "phpmv/ubiquity",
+            "version": "v2.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpMv/ubiquity.git",
+                "reference": "e5619f381b00e71537eaa6c60546248e6b63101d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpMv/ubiquity/zipball/e5619f381b00e71537eaa6c60546248e6b63101d",
+                "reference": "e5619f381b00e71537eaa6c60546248e6b63101d",
                 "shasum": ""
             },
             "require": {
@@ -102,7 +128,7 @@
                 "orm",
                 "php"
             ],
-            "time": "2018-12-24T14:15:49+00:00"
+            "time": "2018-11-21T01:52:02+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -233,8 +259,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mindplay/annotations": 20,
-        "phpmv/ubiquity": 20
+        "phpbenchmarks/ubiquity-common": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
