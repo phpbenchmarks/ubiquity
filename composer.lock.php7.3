@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9fb90dc9f2983d2abac349f371153f03",
+    "content-hash": "e4d433a6a1e6abddffaeff93617c69a9",
     "packages": [
         {
             "name": "mindplay/annotations",
@@ -57,43 +57,72 @@
             "time": "2016-02-14T20:09:40+00:00"
         },
         {
-            "name": "phpbenchmarks/ubiquity-common",
-            "version": "2.1.0",
+            "name": "phpbenchmarks/benchmark-rest-data",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpbenchmarks/ubiquity-common.git",
-                "reference": "c86cde9312f5fc6b840eb068dd0ce7785abd109f"
+                "url": "https://github.com/phpbenchmarks/benchmark-rest-data.git",
+                "reference": "f071a8ffcf9082f53ce1ee8b112aaacab2f32690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpbenchmarks/ubiquity-common/zipball/c86cde9312f5fc6b840eb068dd0ce7785abd109f",
-                "reference": "c86cde9312f5fc6b840eb068dd0ce7785abd109f",
+                "url": "https://api.github.com/repos/phpbenchmarks/benchmark-rest-data/zipball/f071a8ffcf9082f53ce1ee8b112aaacab2f32690",
+                "reference": "f071a8ffcf9082f53ce1ee8b112aaacab2f32690",
                 "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
             },
             "type": "project",
             "autoload": {
                 "psr-4": {
-                    "PhpBenchmarksUbiquity\\HelloWorld\\": ""
+                    "PhpBenchmarksRestData\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
-            "time": "2018-12-28T14:39:12+00:00"
+            "time": "2017-10-24T01:42:51+00:00"
         },
         {
-            "name": "phpmv/ubiquity",
-            "version": "v2.0.5",
+            "name": "phpbenchmarks/ubiquity-common",
+            "version": "dev-ubiquity_2_rest-api",
             "source": {
                 "type": "git",
-                "url": "https://github.com/phpMv/ubiquity.git",
-                "reference": "f2dc9651a02fd8a8448e2b4773f8c27e5edd0ab6"
+                "url": "https://github.com/phpbenchmarks/ubiquity-common.git",
+                "reference": "709736ad7fa9dc7d6dfc1e34cf2273278b7c59cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/ubiquity/zipball/f2dc9651a02fd8a8448e2b4773f8c27e5edd0ab6",
-                "reference": "f2dc9651a02fd8a8448e2b4773f8c27e5edd0ab6",
+                "url": "https://api.github.com/repos/phpbenchmarks/ubiquity-common/zipball/709736ad7fa9dc7d6dfc1e34cf2273278b7c59cb",
+                "reference": "709736ad7fa9dc7d6dfc1e34cf2273278b7c59cb",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "PhpBenchmarksUbiquity\\RestApi\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "time": "2018-12-29T03:34:41+00:00"
+        },
+        {
+            "name": "phpmv/ubiquity",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpMv/ubiquity.git",
+                "reference": "27f626403346d96fe0952b9f61114cc20a87b121"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpMv/ubiquity/zipball/27f626403346d96fe0952b9f61114cc20a87b121",
+                "reference": "27f626403346d96fe0952b9f61114cc20a87b121",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +157,7 @@
                 "orm",
                 "php"
             ],
-            "time": "2018-12-28T02:55:26+00:00"
+            "time": "2018-12-29T13:31:38+00:00"
         },
         {
             "name": "phpmv/ubiquity-devtools",
@@ -178,7 +207,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "phpbenchmarks/ubiquity-common": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
