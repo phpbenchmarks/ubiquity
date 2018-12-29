@@ -18,6 +18,6 @@ $routes=[];
 for ($i = 0; $i < 500; $i++) {
 	$routes[]="/benchmark/test-route-".$i;
 }
-\Ubiquity\cache\CacheManager::addRoutes($routes, $nsPrefix."controllers\\NotCalledController");
+\Ubiquity\cache\CacheManager::addRestRoutes($routes, $nsPrefix."controllers\\NotCalledController");
 \Ubiquity\events\EventsManager::addListener('defineLocale', $nsPrefix."eventListener\DefineLocaleEventListener");
 \Ubiquity\events\EventsManager::store();
