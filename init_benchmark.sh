@@ -6,7 +6,6 @@ function clearCacheAndLogs() {
     sudo /bin/chmod -R 777 app/cache
     [ "$?" != "0" ] && exit 1
 
-    ./vendor/bin/Ubiquity init-cache
 }
 
 function init() {
@@ -14,6 +13,8 @@ function init() {
 
     composer install --no-dev --classmap-authoritative
     [ "$?" != "0" ] && exit 1
+
+    php app/bin/addRoutes
 
     return 0
 }
