@@ -6,9 +6,9 @@ define('ROOT', realpath('./app').DS);
 require dirname(__DIR__).'./../vendor/autoload.php';
 $config=require_once dirname(__DIR__).'./../app/config/config.php';
 
-echo "\n********************************************\n";
-echo "initializes cache for 500 routes and 1 event\n";
-echo "********************************************\n";
+echo "\n*******************************************\n";
+echo "Initialize cache for 500 routes and 1 event\n";
+echo "*******************************************\n";
 
 $nsPrefix="\\PhpBenchmarksUbiquity\\RestApi\\";
 

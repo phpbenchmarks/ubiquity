@@ -3,3 +3,4 @@ vendor/
 composer.lock
 /app/cache
 !/app/cache/.gitkeep
+/app/translations

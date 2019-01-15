@@ -1,12 +1,14 @@
 {
+    "name": "phpbenchmarks/ubiquity",
+    "license": "proprietary",
+    "type": "project",
     "require": {
         "php": "^7.1.3",
-        "mindplay/annotations": "^1.3",
         "phpmv/ubiquity": "2.0.*",
-        "phpmv/ubiquity-devtools": "^1.1",
-        "phpbenchmarks/ubiquity-common": "dev-ubiquity_2_rest-api",
-        "phpbenchmarks/benchmark-rest-data": "^1.0"
+        "phpbenchmarks/ubiquity-common": "2.3.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "": "app/"
