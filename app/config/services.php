@@ -1,8 +1,5 @@
 <?php
-use Ubiquity\cache\CacheManager;
-use Ubiquity\controllers\Router;
-use Ubiquity\events\EventsManager;
-
-CacheManager::startProd($config);
-EventsManager::start();
-Router::startRest();
+Ubiquity\cache\CacheManager::startProd($config);
+Ubiquity\events\EventsManager::start();
+Ubiquity\translation\TranslatorManager::start('fr_FR','en');
+Ubiquity\controllers\Router::startRest();
