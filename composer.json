@@ -1,0 +1,16 @@
+{
+    "name": "phpbenchmarks/ubiquity",
+    "license": "proprietary",
+    "require": {
+        "php": "^7.1.3",
+        "mindplay/annotations": "^1.3",
+        "phpmv/ubiquity": "2.1.2",
+        "phpmv/ubiquity-devtools": "^1.1",
+        "phpbenchmarks/ubiquity-common": "2.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "app/"
+        }
+    }
+}
