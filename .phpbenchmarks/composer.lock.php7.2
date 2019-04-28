@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60016fda3ca5612683076e19ea57f146",
+    "content-hash": "fb550337aeceb940bc5627a012423494",
     "packages": [
         {
             "name": "mindplay/annotations",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-annotations/php-annotations.git",
-                "reference": "85d060e0397a64000ad37cd3842f07c50ca78405"
+                "reference": "5a31c2fd9f9e3e5cedaad747f841e510ad55b38d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-annotations/php-annotations/zipball/85d060e0397a64000ad37cd3842f07c50ca78405",
-                "reference": "85d060e0397a64000ad37cd3842f07c50ca78405",
+                "url": "https://api.github.com/repos/php-annotations/php-annotations/zipball/5a31c2fd9f9e3e5cedaad747f841e510ad55b38d",
+                "reference": "5a31c2fd9f9e3e5cedaad747f841e510ad55b38d",
                 "shasum": ""
             },
             "require": {
@@ -54,20 +54,20 @@
                 "annotations",
                 "framework"
             ],
-            "time": "2017-06-19T20:19:49+00:00"
+            "time": "2019-04-18T08:20:40+00:00"
         },
         {
             "name": "phpbenchmarks/benchmark-rest-data",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpbenchmarks/benchmark-rest-data.git",
-                "reference": "f071a8ffcf9082f53ce1ee8b112aaacab2f32690"
+                "reference": "768b07fb87fd771a801865fd38ebe7438282195b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpbenchmarks/benchmark-rest-data/zipball/f071a8ffcf9082f53ce1ee8b112aaacab2f32690",
-                "reference": "f071a8ffcf9082f53ce1ee8b112aaacab2f32690",
+                "url": "https://api.github.com/repos/phpbenchmarks/benchmark-rest-data/zipball/768b07fb87fd771a801865fd38ebe7438282195b",
+                "reference": "768b07fb87fd771a801865fd38ebe7438282195b",
                 "shasum": ""
             },
             "require": {
@@ -83,20 +83,21 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2017-10-24T01:42:51+00:00"
+            "description": "Data for REST API benchmark on phpbenchmarks.com",
+            "time": "2019-01-28T15:24:43+00:00"
         },
         {
             "name": "phpbenchmarks/ubiquity-common",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpbenchmarks/ubiquity-common.git",
-                "reference": "fb9df9dcc9ba84e10a65b80c8d84ab93bbb94260"
+                "reference": "94bcb1b8c2a6f3b4a7e3513dd205528fa162879e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpbenchmarks/ubiquity-common/zipball/fb9df9dcc9ba84e10a65b80c8d84ab93bbb94260",
-                "reference": "fb9df9dcc9ba84e10a65b80c8d84ab93bbb94260",
+                "url": "https://api.github.com/repos/phpbenchmarks/ubiquity-common/zipball/94bcb1b8c2a6f3b4a7e3513dd205528fa162879e",
+                "reference": "94bcb1b8c2a6f3b4a7e3513dd205528fa162879e",
                 "shasum": ""
             },
             "require": {
@@ -116,24 +117,28 @@
             "license": [
                 "proprietary"
             ],
-            "time": "2019-01-15T15:00:17+00:00"
+            "time": "2019-04-28T22:31:31+00:00"
         },
         {
             "name": "phpmv/ubiquity",
-            "version": "v2.0.7",
+            "version": "2.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpMv/ubiquity.git",
-                "reference": "0acf5fb448e813163e76de061415c48b3ed86b1b"
+                "reference": "4ce2b8c4f04f0736e8b9411a75bf016b02cbfa3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/ubiquity/zipball/0acf5fb448e813163e76de061415c48b3ed86b1b",
-                "reference": "0acf5fb448e813163e76de061415c48b3ed86b1b",
+                "url": "https://api.github.com/repos/phpMv/ubiquity/zipball/4ce2b8c4f04f0736e8b9411a75bf016b02cbfa3e",
+                "reference": "4ce2b8c4f04f0736e8b9411a75bf016b02cbfa3e",
                 "shasum": ""
             },
             "require": {
                 "php": ">7.0"
+            },
+            "require-dev": {
+                "phpmv/ubiquity-codeception": "^1.0",
+                "phpmv/ubiquity-devtools": "dev-master"
             },
             "type": "framework",
             "extra": {
@@ -143,7 +148,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Ubiquity\\": "Ubiquity/"
+                    "Ubiquity\\": "src/Ubiquity/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -164,32 +169,37 @@
                 "orm",
                 "php"
             ],
-            "time": "2019-01-10T15:43:16+00:00"
+            "time": "2019-03-14T02:27:16+00:00"
         },
         {
             "name": "phpmv/ubiquity-devtools",
-            "version": "v1.1.1",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpMv/ubiquity-devtools.git",
-                "reference": "f4662efba101702b60959247f89f0d8c8feb784b"
+                "reference": "bd272bfaf12f8d9a5ff6fdb33bff8227e73b4aeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpMv/ubiquity-devtools/zipball/f4662efba101702b60959247f89f0d8c8feb784b",
-                "reference": "f4662efba101702b60959247f89f0d8c8feb784b",
+                "url": "https://api.github.com/repos/phpMv/ubiquity-devtools/zipball/bd272bfaf12f8d9a5ff6fdb33bff8227e73b4aeb",
+                "reference": "bd272bfaf12f8d9a5ff6fdb33bff8227e73b4aeb",
                 "shasum": ""
             },
             "require": {
-                "php": ">5.3.9"
+                "php": ">7.0"
             },
             "bin": [
-                "Ubiquity"
+                "src/Ubiquity"
             ],
             "type": "installer",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ubiquity\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -200,7 +210,7 @@
                 {
                     "name": "Jean-Christophe HERON",
                     "email": "myaddressmail@gmail.com",
-                    "role": "Developer"
+                    "role": "Lead developer"
                 }
             ],
             "description": "Command line tools for ubiquity-framework",
@@ -208,7 +218,7 @@
                 "framework",
                 "php"
             ],
-            "time": "2019-01-11T01:33:47+00:00"
+            "time": "2019-04-03T11:47:16+00:00"
         }
     ],
     "packages-dev": [],
