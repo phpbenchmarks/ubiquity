@@ -1,0 +1,17 @@
+{
+    "name": "phpbenchmarks/ubiquity",
+    "license": "proprietary",
+    "type": "project",
+    "require": {
+        "php": "^7.1.3",
+        "phpmv/ubiquity": "2.1.2",
+        "phpbenchmarks/ubiquity-common": "2.3.1"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "": "app/"
+        }
+    }
+}

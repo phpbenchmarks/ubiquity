@@ -1,0 +1,9 @@
+app/translations
+vendor/
+.idea/
+composer.lock
+/app/cache
+!/app/cache/.gitkeep
+.project
+.settings/
+.buildpath

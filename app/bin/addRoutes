@@ -1,0 +1,23 @@
+#!/usr/bin/env php
+<?php
+define('DS', DIRECTORY_SEPARATOR);
+define('ROOT', realpath('./app').DS);
+
+require dirname(__DIR__).'./../vendor/autoload.php';
+$config=require_once dirname(__DIR__).'./../app/config/config.php';
+
+echo "\n*******************************************\n";
+echo "Initialize cache for 500 routes and 1 event\n";
+echo "*******************************************\n";
+
+$nsPrefix="\\PhpBenchmarksUbiquity\\RestApi\\";
+
+\Ubiquity\controllers\Startup::setConfig($config);
+\Ubiquity\cache\CacheManager::initCache($config);
+$routes=[];
+for ($i = 0; $i < 500; $i++) {
+	$routes[]="/benchmark/test-route-".$i;
+}
+\Ubiquity\cache\CacheManager::addRestRoutes($routes, $nsPrefix."controllers\\NotCalledController");
+\Ubiquity\events\EventsManager::addListener('defineLocale', $nsPrefix."eventListener\DefineLocaleEventListener");
+\Ubiquity\events\EventsManager::store();
